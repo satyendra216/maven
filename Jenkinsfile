@@ -10,10 +10,13 @@ pipeline {
             }
           }
         stage ('Build') {
-            steps {
+            steps 
+                {
+                dir('src'){
                 sh 'mvn clean package'
             }
         }
+      }
 
         stage ('Deploy to Octopus') {
             steps {
