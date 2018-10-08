@@ -15,7 +15,7 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-      }
+
 
         stage ('Deploy to Octopus') {
             steps {
