@@ -12,7 +12,6 @@ pipeline {
         stage ('Build') {
             steps 
                 {
-                dir('/src/pom.xml'){
                 sh 'mvn clean package'
             }
         }
