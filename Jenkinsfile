@@ -1,5 +1,4 @@
 node {
-     stages {
         stage ('Build') {
             steps 
                 {
@@ -19,5 +18,4 @@ node {
                 }
             }
         }
-    }
 }
