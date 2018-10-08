@@ -4,7 +4,7 @@ pipeline {
         stage ('Build') {
             steps 
                 {
-                sh 'mvn -f src/pom.xml clean package'
+                sh 'mvn -f /var/lib/jenkins/workspace/pipeline1/src clean package'
             }
         }
 
