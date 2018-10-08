@@ -11,7 +11,7 @@ pipeline {
           }
         stage ('Build') {
             steps {
-                echo 'this is first build'
+                sh 'clean package'
             }
         }
 
