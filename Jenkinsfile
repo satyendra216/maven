@@ -1,5 +1,4 @@
-pipeline {
-    agent any 
+node {
      tools {
         jdk 'java 10'
 }
